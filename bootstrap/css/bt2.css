@@ -1,0 +1,232 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'cairo',sans-serif;
+    font-weight:700;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* begin of container section */
+.container{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,.9);
+    padding:15px;
+    position: fixed;
+    width:100%;
+    z-index:9090;
+    /* width:60% */
+    box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.282);
+}
+.container .logo{
+    margin-left:50px;
+}
+.container .nav{
+    margin-right:50px;
+}
+.container .nav ul li{
+    display: inline-block;
+    margin:0 25px;
+}
+.container #active{
+    color: #c32cad;
+    
+}
+.container .nav ul li a{
+    text-decoration: none;
+    color:white;
+    transition: .7s color ease-in-out;
+    letter-spacing: 4px;
+}
+.container .nav ul li a:hover{
+    color: #c32cad;
+}
+/* end of container section */
+
+
+/* begin of view section */
+
+
+.view{
+    position: relative;
+    /* top:79px; */
+    background-image: url("../../Imgs/images/bg1.jpg");
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height:100vh;
+    text-align: center;
+    background-color: #EEE;
+    overflow: hidden;
+}
+.view .color{
+    width: 100%;
+    height:91.5%;
+    /* height:fit-content; */
+    background-color: rgba(0,0,0,.7);
+    
+}
+.view .color .cap{
+    position: absolute;
+    top:30%;
+    left:30%;
+    text-align: center;
+    color:white;
+    width:40%;
+    /* padding:10px 20px; */
+}
+.view .color .cap h1{
+    /* letter-spacing: 4px; */
+    font-size:40px;
+    margin-bottom:10px;
+}
+.view .color .cap p{
+    font-size:15px;
+    font-weight: bold;
+    margin-bottom:20px;
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+}
+.view .color .cap button{
+    all:unset;
+    padding:10px 30px;
+    background-color: RGB(160, 39, 105);
+    border-radius:27px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* end of view section */
+
+/* beging of services section  */
+.services{
+    background-color: #EEE;
+    height:115vh
+}
+.header{
+    text-align: center;
+    /* margin-top:30px; */
+    margin-bottom:70px;
+}
+.services .header h1{
+    color:#c32cad;
+    letter-spacing:3px;
+    margin-bottom: 5px;
+}
+.services .header p{
+    color:gray;
+}
+.services .products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width:80%;
+    margin: auto;
+    /* margin-bottom: 100px; */
+}
+.services .products section{
+    width:30%;
+    padding:45px 10px;
+    text-align: center;
+    /* border:2px solid rgba(128, 128, 128, 0.527); */
+    margin-bottom:30px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .7s background-color , .5s color ease-in-out ;
+}
+.services .products section:hover{
+    color:white;
+    background-color: black;
+}
+.services .products section h2{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.services .products section img{
+    padding:10px 0px ;
+}
+.services .products section p{
+    color:gray;
+}
+
+/* end of ervices section */
+
+
+/* begin of contact form */
+
+.contact .header{
+    margin-top:45px;
+    /* color:purple */
+}
+.contact .header p{
+    color:gray
+}
+.contact .header h1{
+    color:#c32cad;
+    letter-spacing:3px;
+    margin-bottom: 5px;
+}
+.contact .form{
+    display: flex;
+    /* width:70%; */
+    /* margin: auto; */
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow:  row wrap;
+    /* margin: auto; */
+
+}
+.contact .form #input1{
+    width: 33%;
+    margin: 0 10px 20px 0;
+}
+.contact .form #input2{
+    width: 33%;
+}
+.contact .form #input3{
+    width: 68%;
+    margin: 0 0px 20px 0;
+}
+.contact .form textarea{
+    width: 69%;
+    height:230px
+}
+.contact .form input{
+    all:unset;
+    border:1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 5px;
+    padding:10px;
+    text-indent: 10px;
+
+}
+.contact .form textarea{
+    /* all:unset; */
+    outline: none;
+    border:1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 5px;
+    padding:10px 10px;
+    text-indent: 10px;
+}
+textarea::placeholder{
+    font-size:20px;
+}
+.contact .form button{
+    all:unset;
+    /* width:30%; */
+    flex-basis: 33%;
+    text-align: center;
+    background-color: #c32cad;
+    margin:30px 0;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* end of contact form */
